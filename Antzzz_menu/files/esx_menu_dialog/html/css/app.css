@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+#controls {
+	font-family: 'georgia', sans-serif;
+	font-size: 3em;
+	color: #d41414;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	font-family: 'georgia', sans-serif;
+	background-color: rgba(26, 26, 26, 1);
+	color: #d41414;
+	box-shadow: 0px 0px 50px 0px #000;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 144px;
+	transform: translate(-50%, -50%);
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	background-color: #506ce600;
+	text-align: center;
+	height: 45px;
+}
+
+.dialog .head span:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog input[type="text"] {
+	margin-left: 90px;
+	width: 70%;
+	outline: none;
+	border: none;
+	background: rgba(28, 28, 28, 1);
+	color: white;
+	box-sizing: border-box;
+	padding: 10px 5px;
+	height: 32px;
+	border: 2px solid rgba(33, 33, 33, 1);
+}
+
+/* .dialog input[type="text"]:focus {
+} */
+
+::placeholder {
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+}
+
+.dialog textarea {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	height: 128px;
+}
+
+.dialog button {
+	border: none;
+	font-size: 14px;
+	outline: none;
+	color: #d41414;
+	transition: ease-out 0.2s;
+}
+
+.dialog button[name="submit"] {
+	margin-left: 140px;
+	margin-top: 15px;
+	width: 25%;
+	height: 32px;
+	background: rgba(28, 28, 28, 1);
+	border: 2px solid rgba(33, 33, 33, 1);
+}
+
+.dialog button[name="cancel"] {
+	margin: 15px;
+	width: 25%;
+	height: 32px;
+	background: rgba(28, 28, 28, 1);
+	border: 2px solid rgba(33, 33, 33, 1);
+}
+
+.dialog button:hover {
+	border: 2px solid #d41414;
+}
